@@ -61,10 +61,3 @@ RU
 6. После успешной проверки IP вы увидите сообщение в логе.
 7. Для Firefox потребуется перезапустить браузер.
 8. При отключении или закрытии программы исходные настройки будут восстановлены.
-
-## Сборка .exe (для Windows)
-Если нужен исполняемый файл без Java, используйте `jpackage` (входит в JDK 14+):
-```cmd
-javac PCClient.java
-jar cfe PCClient.jar PCClient *.class
-jpackage --name "PhoneVPNProxy" --input . --main-jar PCClient.jar --main-class PCClient --type exe
